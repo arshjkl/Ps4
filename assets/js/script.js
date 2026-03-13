@@ -186,13 +186,16 @@ var botaoPsClicado = false;
 var tempoAcabou = false;
 
 function unlock_page() {
-    if (tempoAcabou) {
-        play_b()
-        document.getElementById("restoDaPagina").style.display = "block";
-        document.getElementById("imagem").style.display = "none";
-        botaoPsClicado = true;
-        document.getElementById("mensagem").style.display = "none"; // Oculta a mensagem quando o botão é clicado
-    }
+
+    play_b();
+
+    document.getElementById("restoDaPagina").classList.remove("hide");
+
+    document.getElementById("imagem").style.display = "none";
+    document.getElementById("mensagem").style.display = "none";
+
+    botaoPsClicado = true;
+
 }
     
 function updateLoop() {
@@ -460,4 +463,14 @@ $(".squareGame").hover(
     $(this).find('#store').hide();
     $(this).find('.imgGame').css("opacity", "1"); // Define a opacidade original da imagem
   }
+  
 );
+
+
+
+
+
+// Start screen: open dashboard on any interaction
+document.addEventListener("click", unlock_page);
+document.addEventListener("touchstart", unlock_page);
+document.addEventListener("keydown", unlock_page);
