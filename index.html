@@ -16,150 +16,156 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/animate.min.css">
     <script src="./assets/js/jquery.min.js"></script>
   </head>
-  <body>
-    <img id="imagem" src="./assets/img/start.png" alt="Start">
-  <div id="mensagem"> Press PS button or space </div>
-      	<div id="restoDaPagina" class="hide">
-            <!-- partial:index.partial.html -->
-              <header>
-                    <!-- <div id="psp"></div> -->
-                  <a href="#"> 
-                    <div id="plus" tabindex="0"></div> </a>
-                    <div id="info"></div>
-                    <div id="textInfo">God of War Ragnarok now available!</div>
-                    <div id="friends">+5</div>
-                    <div id="user"></div>
-                    <div id="userName">Player</div>
-                    <div id="trophies">‎ ‎ ‎ ‎ ‎ ‎  +6</div>
-                    <div id="clock" onload="currentTime()"></div>
-                </header>
-      
-                <div id="games">
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame ps" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Playstation Store</span>
-                        <div id="store">
-				<div id="god" class="storeGame"></div>
-				<div id="raider" class="storeGame"></div>
-				<div id="codi" class="storeGame"></div>
-				<div id="mafia" class="storeGame"></div>
-				<div id="destiny" class="storeGame"></div>
-				<div id="bt1" class="storeGame"></div>
-				<div id="lg" class="storeGame"></div>
-				<div id="per" class="storeGame"></div>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame new" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">What's New</span>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame last" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">The Last Of Us Part II</span>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame detroit" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Detroit: Become Human</span>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame spiderman" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Spider-Man</span>
-                    </div>
-                    </a>
-                        <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame battle" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Battlefield 1</span>
-                    </div>
-                        </a>
-                        <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame death" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Death Stranding</span>
-                    </div>
-                        </a>
-                        <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame red" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Red Dead Redemption 2</span>
-                    </div>
-                        </a>
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame elden" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Elden Ring</span>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame cod" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Call Of Duty: Black Ops III</span>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame jedi" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Jedi: Fallen Order</span>
-                    </div>
-                    </a>
-                        <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame fifa" tabindex="0"></div>
-                        <div class="gameText">Start</div>
-                        <span class="gameTitle">Fifa 23</span>
-                    </div>
-                        </a>
-                        <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame youtube" tabindex="0"></div>
-                        <div class="gameText">Open</div>
-                        <span class="gameTitle">Youtube</span>
-                    </div>
-                         </a>
-                        <a href="#">
-                    <div class="squareGame animated bounceInLeft">
-                        <div class="imgGame settings" tabindex="0"></div>
-                        <div class="gameText">Open</div>
-                        <span class="gameTitle">Settings</span>
-                    </div>
-                        </a>
-                        <a href="#">
-                    <div class="squareGame animated bounceInLeft" id="shutdown">
-                        <div class="imgGame off" tabindex="0"></div>
-                        <div class="gameText">Shutdown</div>
-                        <span class="gameTitle">Turn Off</span>
-                    </div>
-                        </a>
-                </div>
 
-                <div class='box'>
-                  <div class='wave -one'></div>
-                  <div class='wave -two'></div>
-                  <div class='wave -three'></div>
-                </div>
+  <body>
+
+    <img id="imagem" src="./assets/img/start.png" alt="Start">
+    <div id="mensagem"> Press PS button or space </div>
+
+    <div id="restoDaPagina" class="hide">
+
+      <header>
+        <a href="#">
+          <div id="plus" tabindex="0"></div>
+        </a>
+
+        <div id="info"></div>
+        <div id="textInfo">God of War Ragnarok now available!</div>
+
+        <div id="friends">+5</div>
+
+        <div id="user"></div>
+        <div id="userName">Player</div>
+
+        <div id="trophies">‎ ‎ ‎ ‎ ‎ ‎  +6</div>
+
+        <div id="clock" onload="currentTime()"></div>
+      </header>
+
+
+      <div id="games">
+
+        <a href="#">
+        <div class="squareGame animated bounceInLeft">
+            <div class="imgGame ps" tabindex="0"></div>
+            <div class="gameText">Start</div>
+            <span class="gameTitle">Playstation Store</span>
+            <div id="store">
+                <div id="god" class="storeGame"></div>
+                <div id="raider" class="storeGame"></div>
+                <div id="codi" class="storeGame"></div>
+                <div id="mafia" class="storeGame"></div>
+                <div id="destiny" class="storeGame"></div>
+                <div id="bt1" class="storeGame"></div>
+                <div id="lg" class="storeGame"></div>
+                <div id="per" class="storeGame"></div>
+            </div>
+        </div>
+        </a>
+
+
+        <a href="wish1.html">
+        <div class="squareGame animated bounceInLeft">
+            <div class="imgGame last" tabindex="0"></div>
+            <div class="gameText">Start</div>
+            <span class="gameTitle">The Last Of Us Part II</span>
+        </div>
+        </a>
+
+
+        <a href="wish2.html">
+        <div class="squareGame animated bounceInLeft">
+            <div class="imgGame spiderman" tabindex="0"></div>
+            <div class="gameText">Start</div>
+            <span class="gameTitle">Spider-Man</span>
+        </div>
+        </a>
+
+
+        <a href="wish3.html">
+        <div class="squareGame animated bounceInLeft">
+            <div class="imgGame red" tabindex="0"></div>
+            <div class="gameText">Start</div>
+            <span class="gameTitle">Red Dead Redemption 2</span>
+        </div>
+        </a>
+
+
+        <a href="wish4.html">
+        <div class="squareGame animated bounceInLeft">
+            <div class="imgGame cod" tabindex="0"></div>
+            <div class="gameText">Start</div>
+            <span class="gameTitle">Call Of Duty: Black Ops III</span>
+        </div>
+        </a>
+
+
+        <a href="#">
+        <div class="squareGame animated bounceInLeft" id="shutdown">
+            <div class="imgGame off" tabindex="0"></div>
+            <div class="gameText">Shutdown</div>
+            <span class="gameTitle">Turn Off</span>
+        </div>
+        </a>
+
       </div>
 
-    <!--========== JAVASCRIPT ===========-->
-    <script  src="./assets/js/script.js"></script>
+
+      <div class='box'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+      </div>
+
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    <div id="psPopup" class="ps-popup">
+
+        <div class="ps-popup-box">
+
+            <h2>🎉 System Message</h2>
+
+            <p>
+                Welcome to the Birthday Console.
+            <br><br>
+                Choose a game tile to unlock a birthday wish.
+            </p>
+
+    <button onclick="closePopup()">OK</button>
+
+        </div>
+
+    </div>
   </body>
+
+  <script>
+
+function closePopup(){
+document.getElementById("psPopup").classList.remove("show");
+}
+
+window.addEventListener("load", function(){
+
+setTimeout(function(){
+
+document.getElementById("psPopup").classList.add("show");
+
+playPopupSound();
+
+},7000);
+
+});
+
+function playPopupSound(){
+
+let audio = new Audio("./assets/js/reward.mp3");
+
+audio.volume = 0.6;
+
+audio.play();
+
+}
+
+</script>
 </html>

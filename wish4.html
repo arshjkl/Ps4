@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Wish</title>
+
+<link href="./assets/css/google.css" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.min.css">
+
+<style>
+
+body{
+background:#0a3d62;
+font-family:'Segoe UI', sans-serif;
+color:white;
+margin:0;
+overflow:hidden;
+}
+
+/* Layout */
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:80vh;
+gap:60px;
+padding:40px;
+}
+
+.text{
+max-width:500px;
+font-size:28px;
+line-height:1.6;
+}
+
+.text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.image img{
+width:360px;
+border-radius:10px;
+}
+
+/* Thank you button */
+
+.thankyouContainer{
+width:100%;
+display:flex;
+justify-content:center;
+margin-bottom:60px;
+}
+
+.thankBtn{
+background:#1e90ff;
+border:none;
+padding:14px 40px;
+font-size:20px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+font-family:'Segoe UI', sans-serif;
+transition:0.3s;
+}
+
+.thankBtn:hover{
+background:#4aa8ff;
+transform:scale(1.05);
+}
+
+/* Trophy popup */
+
+.trophy{
+position:fixed;
+top:30px;
+left:-400px;
+background:#1c1c1c;
+color:white;
+padding:15px 20px;
+border-radius:6px;
+display:flex;
+align-items:center;
+gap:15px;
+box-shadow:0 0 15px rgba(0,0,0,0.6);
+transition:all 0.8s;
+}
+
+.trophy.show{
+left:30px;
+}
+
+.trophy img{
+width:40px;
+}
+
+.trophy-text{
+font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="text">
+
+<h1>Happy Birthday Vaidika🎉</h1>
+
+<p>
+You are the great rani didi you are really the great 
+You became 18 just now thats soooo great but in my eyes you are the same rani didi who was 28 and became 30 today 
+You are really so sweet not as much as rani didi as i miss her but you are great. I just love you rani didi
+</p>
+
+</div>
+
+<div class="image">
+<img src="./assets/img/photo4.jpeg">
+</div>
+
+</div>
+
+
+<div class="thankyouContainer">
+
+<button class="thankBtn" onclick="window.location.href='index.html'">
+Thank You ❤️
+</button>
+
+</div>
+
+
+<!-- Trophy popup -->
+
+<div id="trophy" class="trophy">
+
+<img src="./assets/img/icon.png">
+
+<div class="trophy-text">
+<strong>Achievement Unlocked</strong><br>
+Best Sister Ever
+</div>
+
+</div>
+
+
+<script>
+
+window.onload = function(){
+
+setTimeout(function(){
+
+document.getElementById("trophy").classList.add("show");
+
+},800);
+
+setTimeout(function(){
+
+document.getElementById("trophy").classList.remove("show");
+
+},5000);
+
+}
+
+</script>
+
+</body>
+</html>

@@ -281,8 +281,10 @@ document.addEventListener("keydown", function (event) {
             play_a();
             break;
         case "Enter":
+           clickItem(current);
+            break;
+
         case "Space":
-            clickItem(current);
             unlock_page();
             break;
         case "ShiftLeft":
@@ -315,7 +317,7 @@ let timer = setInterval(function () {
     setTimeout(function () {
       tempoAcabou = true;
       document.getElementById("mensagem").style.display = "block";
-    }, 15000);
+    }, 1000);
     
 //Notification
     function showNotification() {
